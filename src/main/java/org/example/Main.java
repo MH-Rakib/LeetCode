@@ -10,12 +10,10 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        Problem448 problem448 = new Problem448();
-        List<int[]> testCases = problem448.getTestCase();
+        Problem2022 problem2022 = new Problem2022();
 
-        for(int i=0; i<testCases.size(); i++){
-            List<Integer> result = problem448.findDisappearedNumbers(testCases.get(i));
-            System.out.println(result);
-        }
+        int[] arr = new int[]{1,2,3,4};
+
+        int[][] result = problem2022.construct2DArray(arr, 2,2 );
     }
 }
