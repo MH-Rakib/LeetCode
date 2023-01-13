@@ -10,10 +10,21 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        Problem2022 problem2022 = new Problem2022();
+        Problem234 problem234 = new Problem234();
 
-        int[] arr = new int[]{1,2,3,4};
+        LinkedList linkedList = new LinkedList();
 
-        int[][] result = problem2022.construct2DArray(arr, 2,2 );
+        linkedList.insertNode(1);
+        linkedList.insertNode(1);
+        linkedList.insertNode(2);
+        linkedList.insertNode(3);
+        linkedList.insertNode(3);
+        linkedList.insertNode(2);
+        linkedList.insertNode(1);
+        linkedList.insertNode(1);
+
+
+        boolean result = problem234.isPalindrome(linkedList.head);
+        System.out.println(result);
     }
 }
